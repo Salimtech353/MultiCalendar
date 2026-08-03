@@ -1,0 +1,87 @@
+[
+  {
+    "date": "1 Jan",
+    "day": "Wednesday",
+    "name": "New Year Day"
+  },
+  {
+    "date": "4 Feb",
+    "day": "Tuesday",
+    "name": "Shab-e-Barat"
+  },
+  {
+    "date": "21 Feb",
+    "day": "Friday",
+    "name": "Shaheed Day and International Mother Language Day"
+  },
+  {
+    "date": "17 Mar",
+    "day": "Monday",
+    "name": "Shab-e-Qadr"
+  },
+  {
+    "date": "19–23 Mar",
+    "day": "Varies",
+    "name": "Eid-ul-Fitr (Expected)"
+  },
+  {
+    "date": "26 Mar",
+    "day": "Wednesday",
+    "name": "Independence and National Day"
+  },
+  {
+    "date": "14 Apr",
+    "day": "Monday",
+    "name": "Bangla New Year"
+  },
+  {
+    "date": "1 May",
+    "day": "Thursday",
+    "name": "May Day"
+  },
+  {
+    "date": "1 May",
+    "day": "Thursday",
+    "name": "Buddha Purnima"
+  },
+  {
+    "date": "26–31 May",
+    "day": "Varies",
+    "name": "Eid-ul-Adha (Expected)"
+  },
+  {
+    "date": "26 Jun",
+    "day": "Thursday",
+    "name": "Ashura"
+  },
+  {
+    "date": "5 Aug",
+    "day": "Tuesday",
+    "name": "July Mass Uprising Day"
+  },
+  {
+    "date": "26 Aug",
+    "day": "Tuesday",
+    "name": "Eid-e-Milad-un-Nabi"
+  },
+  {
+    "date": "4 Sep",
+    "day": "Thursday",
+    "name": "Janmashtami"
+  },
+  {
+    "date": "21 Oct",
+    "day": "Tuesday",
+    "name": "Durga Puja - Bijoya Dashami"
+  },
+  {
+    "date": "16 Dec",
+    "day": "Tuesday",
+    "name": "Victory Day"
+  },
+  {
+    "date": "25 Dec",
+    "day": "Thursday",
+    "name": "Christmas Day"
+  }
+]

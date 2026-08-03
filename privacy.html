@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy</title>
+
+<style>
+
+/* =========================
+   🌈 BACKGROUND
+========================= */
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(135deg, #e3f2fd, #f5f7fa);
+    color: #333;
+}
+
+/* =========================
+   📦 CONTAINER
+========================= */
+.container {
+    padding: 20px;
+}
+
+/* =========================
+   🔥 CARD DESIGN + ANIMATION
+========================= */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+
+    /* animation base */
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation: cardFade 0.6s ease forwards;
+
+    transition: all 0.3s ease;
+}
+
+/* 🔥 stagger animation (one by one) */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+
+/* hover effect */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   ✨ HEADINGS
+========================= */
+h2 {
+    text-align: center;
+    color: #2196F3;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   📝 TEXT
+========================= */
+p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* =========================
+   👤 PROFILE IMAGE
+========================= */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+
+    border: 4px solid #2196F3;
+    animation: zoomIn 0.8s ease;
+}
+
+/* =========================
+   🔗 LINKS
+========================= */
+a {
+    text-decoration: none;
+    color: #2196F3;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #0d47a1;
+}
+
+/* =========================
+   📱 SOCIAL LIST
+========================= */
+.social-links li {
+    list-style: none;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.social-links li:hover {
+    transform: translateX(6px);
+}
+
+/* =========================
+   📦 DEMO LINKS
+========================= */
+.demo-link a {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+
+    background: #f1f8ff;
+    transition: 0.3s;
+}
+
+.demo-link a:hover {
+    background: #e3f2fd;
+    transform: scale(1.02);
+}
+
+/* =========================
+   🦶 FOOTER
+========================= */
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* =========================
+   🎬 ANIMATIONS
+========================= */
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h2>🔐 Privacy Policy</h2>
+
+        <p>
+            Your privacy is important to us. This Privacy Policy explains how our application handles your information.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>📌 Information Collection</h3>
+        <p>
+            This app does not collect, store, or share any personal information of users.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🔔 Notification Permission</h3>
+        <p>
+            Our app requests notification permission only to send reminders and alerts related to your saved events.
+        </p>
+        <ul>
+            <li>Used only for event reminders</li>
+            <li>No personal data is collected through notifications</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>💾 Data Usage</h3>
+        <p>
+            Any data you enter (such as tasks or events) is stored locally on your device and is not transmitted to any server.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🔒 Data Sharing</h3>
+        <p>
+            We do not share, sell, or distribute any user data to third parties.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>⚙️ Changes to This Policy</h3>
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be reflected on this page.
+        </p>
+    </div>
+
+    <div class="footer">
+        © 2026 Multi Calendar | All Rights Reserved
+    </div>
+
+</div>
+
+</body>
+</html>

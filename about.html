@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About App</title>
+
+<style>
+
+/* =========================
+   🌈 BACKGROUND
+========================= */
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(135deg, #e3f2fd, #f5f7fa);
+    color: #333;
+}
+
+/* =========================
+   📦 CONTAINER
+========================= */
+.container {
+    padding: 20px;
+}
+
+/* =========================
+   🔥 CARD DESIGN + ANIMATION
+========================= */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+
+    /* animation base */
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation: cardFade 0.6s ease forwards;
+
+    transition: all 0.3s ease;
+}
+
+/* 🔥 stagger animation (one by one) */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+
+/* hover effect */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   ✨ HEADINGS
+========================= */
+h2 {
+    text-align: center;
+    color: #2196F3;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   📝 TEXT
+========================= */
+p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* =========================
+   👤 PROFILE IMAGE
+========================= */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+
+    border: 4px solid #2196F3;
+    animation: zoomIn 0.8s ease;
+}
+
+/* =========================
+   🔗 LINKS
+========================= */
+a {
+    text-decoration: none;
+    color: #2196F3;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #0d47a1;
+}
+
+/* =========================
+   📱 SOCIAL LIST
+========================= */
+.social-links li {
+    list-style: none;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.social-links li:hover {
+    transform: translateX(6px);
+}
+
+/* =========================
+   📦 DEMO LINKS
+========================= */
+.demo-link a {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+
+    background: #f1f8ff;
+    transition: 0.3s;
+}
+
+.demo-link a:hover {
+    background: #e3f2fd;
+    transform: scale(1.02);
+}
+
+/* =========================
+   🦶 FOOTER
+========================= */
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* =========================
+   🎬 ANIMATIONS
+========================= */
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+</style>
+  </head>
+
+  <body>
+
+	<div class="container">
+
+	  <!-- ABOUT -->
+	  <div class="card">
+        <h2>📱 About This App</h2>
+        <p>
+		  এই অ্যাপটি একটি স্মার্ট ও ব্যবহারবান্ধব টুল, যা আপনার দৈনন্দিন জীবনকে সহজ ও সংগঠিত করতে সাহায্য করে।
+        </p>
+	  </div>
+
+	  <!-- FEATURES -->
+	  <div class="card">
+        <h3>✨ Features</h3>
+        <ul>
+		  <li>📅 বাংলা, ইংরেজি এবং আরবি তারিখ</li>
+		  <li>🎉 সরকারি ছুটির তালিকা</li>
+		  <li>📝 টাস্ক ম্যানেজার</li>
+		  <li>📌 নোটিফিকেশন সিস্টেম</li>
+		  <li>🌙 ডার্ক মোড</li>
+        </ul>
+	  </div>
+
+	  <!-- DEVELOPER -->
+	  <div class="card">
+
+        <img src="salim.jpg" class="profile-img"/>
+
+        <h2>Md. Salim Hossain</h2>
+        <h3>👨‍💻 Developer</h3>
+
+        <p>
+		  Android & Web Developer. I create fast, clean and user-friendly apps.
+        </p>
+	  </div>
+
+	  <!-- SOCIAL -->
+	  <div class="card">
+        <h3>📞 Contact & Social Media</h3>
+        <ul class="social-links">
+		  <li>📱 <a href="tel:+8801737462871">01737462871</a></li>
+		  <li>✉️ <a href="mailto:salimbd.ga@gmail.com">salimbd.ga@gmail.com</a></li>
+		  <li>📘 <a href="https://www.facebook.com/salim.naogaon">Facebook</a></li>
+		  <li>▶️ <a href="https://www.youtube.com/@TechZone_71">YouTube</a></li>
+		  <li>📸 <a href="https://www.instagram.com/salim.naogaon">Instagram</a></li>
+		  <li>💼 <a href="https://www.linkedin.com/in/salimnaogaon">LinkedIn</a></li>
+		  <li>🌐 <a href="https://salimtech353.github.io/portfolio/">Website</a></li>
+        </ul>
+	  </div>
+
+	  <!-- APPS -->
+	  <div class="card">
+		<h3>📦 Our Other Apps</h3>
+
+		<div class="demo-link">
+
+		  <a href="https://github.com/Salimbd71/JobsBD/releases/download/v1.0.2/jobsbd-v1.0.2.apk">
+            👉 JobsBD App (v1.0.2) Download
+		  </a>
+
+		  <a href="https://github.com/Salimtech353/Prayer/releases/download/v1.0.7/prayer_v1.0.7.apk">
+            👉 Prayer App (v1.0.7) Download
+		  </a>
+
+		  <a href="https://github.com/Salimtech353/LiveTV71/releases/download/v1.0.2/livetv71_v1.0.2.apk">
+            👉 LiveTV71 App (v1.0.2) Download
+		  </a>
+
+		  <a href="https://github.com/Salimbd71/azurasunpharma/releases/download/v2.0.2/azura-sunpharma-v2.0.2.apk">
+			👉 Azura SunPharma App (v2.0.2) Download
+		  </a>
+
+		</div>
+	  </div>
+
+	  <!-- FOOTER -->
+	  <div class="footer">
+        © 2026 Multi Calendar | All Rights Reserved
+	  </div>
+
+	</div>
+
+  </body>
+</html>
